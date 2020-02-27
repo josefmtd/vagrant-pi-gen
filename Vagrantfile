@@ -66,5 +66,6 @@ Vagrant.configure("2") do |config|
   config.vm.provision "shell", inline: <<-SHELL
     apt-get update
     apt-get upgrade -y
+    git clone https://github.com/josefmtd/pi-gen
   SHELL
 end
